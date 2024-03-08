@@ -8,25 +8,82 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
   <link href="https://fonts.googleapis.com/css2?family=Uchen&display=swap" rel="stylesheet">
 
+  <!-- Styling -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/Homepage.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/desk-nav.css">
+  <link rel="stylesheet" href="css/a.css">
 </head>
 
 
 <body class="body">
+   <!-- Desktop Nav -->
+   <section class="entire-desk-nav">
+    <div class="desk-nav" id="myNavbar">
+      <a href="/portfolio.html" class="topic-options-nav" id="desk-homepage"><i id="nav-icons" class="fa fa-th"></i> Portfolio </a>
+      <a href="/aboutme.html" class="topic-options-nav" id="desk-portfolio"><i id="nav-icons" class="fa fa-user"></i> About </a>
+      <a href="/contact.html" class="topic-options-nav" id="desk-information"> <i id="nav-icons" class="fa fa-envelope"></i> Contact </a>
+      <a style=" border-right: none;" href="/resume.html" class="topic-options-nav" id="desk-portfolio"><i id="nav-icons" class="fa fa-file"></i></i> CV/Resume </a>
+    </div>
+    <div class="desk-nav" id="social-media">
+      <a href="https://github.com/whitneybolar" target=”_blank” class="topic-options-nav" id="desk-github"><i id="nav-icons" class="fa fa-github" style="font-size:20px;"></i></a>
+      <a href="https://www.linkedin.com/in/whitney-bolar-7bb222179/" target=”_blank” class="topic-options-nav" id="desk-linkedin"><i id="nav-icons"  class="fa fa-linkedin-square" style="font-size:20px;"></i></a>
+    </div>
+    </section>
+
+  <!-- Mobile Nav -->
+  <section class="entire-nav">
+    <button onclick="switchMenuButton()" class="button switch-button" id="menu-bar">
+      <i class="fa fa-bars" id="bar-image"></i>
+      <i class="fa fa-close" id="close-image" style="color: white;"></i>
+    </button>
+      <div class="menu-background">
+      </div>
+      <section class="nav-menu" id="just-nav"> 
+        <div class="list-part">
+          <a href="https://github.com/whitneybolar"> <i class="fa fa-github" target=”_blank” id="github" style="color:white;"></i></a>
+          <a href="https://www.linkedin.com/in/whitney-bolar-7bb222179/"> <i class="fa fa-linkedin-square" target=”_blank” id="linkedin" style="color:white;"></i></a>
+        </div>
+        <div class="list-part">
+        <a href="/portfolio.html" class="nav-item" id="portfolio-btn">
+          <i class="fa fa-th" id="nav-img"></i>
+          <p class="nav-link"> Portfolio </p>
+        </a>
+        <a href="/aboutme.html" class="nav-item" id="portfolio-btn">
+          <i class="fa fa-user" id="nav-img"></i>
+          <p class="nav-link"> About </p>
+        </a>
+        <a href="/contact.html" class="nav-item" id="info-btn">
+            <i class="fa fa-envelope" id="nav-img"></i>
+            <p class="nav-link"> Contact </p>
+        </a>
+        <a style=" border-bottom: none;" href="/resume.html" class="nav-item" id="info-btn">
+          <i class="fa fa-file" id="nav-img"></i>
+          <p class="nav-link"> CV / Resume </p>
+      </a>
+    </section>
+  </section>
+  <section class="message-section">
     <h3> Message Sent! </h3>
-    <img src="/img/contact-message-sent-img.png" style="height: 300px; margin-bottom: -80px;">
+    <img src="/imgs/contact-message-sent-img.png" style="height: 300px; margin-bottom: -80px;">
     <p> There's much to see here. So, take your time, look around, and feel free to ask any questions about my work. I hope you enjoy my site. </p>
     <form action="https://whitneybolar.github.io/"> 
     <div class="submit-package">
         <input style="width: 500px;" id="send-button" type="submit" value="Homepage">
      </div> 
     </form>
+  </section>
 </body>
 
 <!-- CSS -->
 <style>
 /*General styling */ 
 .body{
-background-color: #efede7;
+  background-color: #efede7;
+}
+.message-section{
 display: flex; 
 justify-content: center;
 align-items: center;

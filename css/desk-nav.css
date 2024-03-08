@@ -1,0 +1,61 @@
+/* Style strictly related to the Desktop Nav*/
+
+@media (min-width: 600px){
+
+    .entire-desk-nav{
+	    position: sticky;
+	    top: 0;
+        background-color: #efede7;
+
+        z-index: 3;
+    }
+
+    .desk-nav{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: start;
+
+        background-color: #efede7;
+        font-size: 16px;
+
+    }
+
+    #desk-linkedin, #desk-github{
+        border: none;
+        scale: 120%;
+        margin-top: 5px;
+    }
+
+    .entire-desk-nav{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #social-media{
+        flex-wrap: nowrap;
+    }
+
+    .topic-options-nav{
+        padding: 10px;
+        padding-right: 15px;
+        text-decoration: none;
+        width: fit-content;
+        border-right: 0.1px solid #363636;
+        margin-bottom: 15px;
+    }
+
+    .topic-options-nav:hover{
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    #desk-questions, #cv-portfolio{
+        border-right: none;
+    }
+}
+
+@media (max-width: 600px){
+    .topic-options-nav{
+        display: none;
+    }
+}
