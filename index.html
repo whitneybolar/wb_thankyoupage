@@ -11,10 +11,9 @@
   <!-- Styling -->
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/Homepage.css">
+  <link rel="stylesheet" href="css/thankyou.css">
   <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="css/desk-nav.css">
-  <link rel="stylesheet" href="css/a.css">
 </head>
 
 
@@ -22,10 +21,10 @@
    <!-- Desktop Nav -->
    <section class="entire-desk-nav">
     <div class="desk-nav" id="myNavbar">
-      <a href="/portfolio.html" class="topic-options-nav" id="desk-homepage"><i id="nav-icons" class="fa fa-th"></i> Portfolio </a>
-      <a href="/aboutme.html" class="topic-options-nav" id="desk-portfolio"><i id="nav-icons" class="fa fa-user"></i> About </a>
-      <a href="/contact.html" class="topic-options-nav" id="desk-information"> <i id="nav-icons" class="fa fa-envelope"></i> Contact </a>
-      <a style=" border-right: none;" href="/resume.html" class="topic-options-nav" id="desk-portfolio"><i id="nav-icons" class="fa fa-file"></i></i> CV/Resume </a>
+      <a href="https://whitneybolar.github.io/portfolio.html" class="topic-options-nav" id="desk-homepage"><i id="nav-icons" class="fa fa-th"></i> Portfolio </a>
+      <a href="https://whitneybolar.github.io/aboutme.html" class="topic-options-nav" id="desk-portfolio"><i id="nav-icons" class="fa fa-user"></i> About </a>
+      <a href="https://whitneybolar.github.io/contact.html" class="topic-options-nav" id="desk-information"> <i id="nav-icons" class="fa fa-envelope"></i> Contact </a>
+      <a style=" border-right: none;" href="https://whitneybolar.github.io/resume.html" class="topic-options-nav" id="desk-portfolio"><i id="nav-icons" class="fa fa-file"></i></i> CV/Resume </a>
     </div>
     <div class="desk-nav" id="social-media">
       <a href="https://github.com/whitneybolar" target=”_blank” class="topic-options-nav" id="desk-github"><i id="nav-icons" class="fa fa-github" style="font-size:20px;"></i></a>
@@ -34,116 +33,20 @@
     </section>
 
   <!-- Mobile Nav -->
-  <section class="entire-nav">
-    <button onclick="switchMenuButton()" class="button switch-button" id="menu-bar">
-      <i class="fa fa-bars" id="bar-image"></i>
-      <i class="fa fa-close" id="close-image" style="color: white;"></i>
-    </button>
-      <div class="menu-background">
-      </div>
-      <section class="nav-menu" id="just-nav"> 
-        <div class="list-part">
-          <a href="https://github.com/whitneybolar"> <i class="fa fa-github" target=”_blank” id="github" style="color:white;"></i></a>
-          <a href="https://www.linkedin.com/in/whitney-bolar-7bb222179/"> <i class="fa fa-linkedin-square" target=”_blank” id="linkedin" style="color:white;"></i></a>
-        </div>
-        <div class="list-part">
-        <a href="/portfolio.html" class="nav-item" id="portfolio-btn">
-          <i class="fa fa-th" id="nav-img"></i>
-          <p class="nav-link"> Portfolio </p>
-        </a>
-        <a href="/aboutme.html" class="nav-item" id="portfolio-btn">
-          <i class="fa fa-user" id="nav-img"></i>
-          <p class="nav-link"> About </p>
-        </a>
-        <a href="/contact.html" class="nav-item" id="info-btn">
-            <i class="fa fa-envelope" id="nav-img"></i>
-            <p class="nav-link"> Contact </p>
-        </a>
-        <a style=" border-bottom: none;" href="/resume.html" class="nav-item" id="info-btn">
-          <i class="fa fa-file" id="nav-img"></i>
-          <p class="nav-link"> CV / Resume </p>
-      </a>
-    </section>
-  </section>
+  
   <section class="message-section">
     <h3> Message Sent! </h3>
-    <img src="/img/contact-message-sent-img.png" style="height: 300px; margin-bottom: -80px;">
+    <img id="img-back-homepage" src="/img/contact-message-sent-img.png" style="height: 300px; margin-bottom: -80px;">
     <p> There's much to see here. So, take your time, look around, and feel free to ask any questions about my work. I hope you enjoy my site. </p>
     <form action="https://whitneybolar.github.io/"> 
     <div class="submit-package">
-        <input style="width: 500px;" id="send-button" type="submit" value="Homepage">
+        <input id="send-button" type="submit" value="Homepage">
      </div> 
     </form>
   </section>
+
+  <!-- My Scripts -->
+  <script src="js/nav.js"></script>
+  <script src="js/metadata.js"></script>
 </body>
-
-<!-- CSS -->
-<style>
-/*General styling */ 
-.body{
-  background-color: #efede7;
-}
-.message-section{
-display: flex; 
-justify-content: center;
-align-items: center;
-align-self: center;
-flex-direction: column;
-text-align: center;
-font-family: "Lato", sans-serif;
-}
-
-#send-button{
-  font-family: 'Staatliches', cursive;
-  color: white;
-  padding: 5px;
-  border-radius: 5px;
-  background-color: transparent;
-  border: 3px solid #383838;
-  height: 70px;
-  font-size: 20px;
-  background-color: #363636;
-}
-
-#send-button:hover{
-  border: 3px solid #efede7;
-}
-
-h3{
-  margin-top: 100px;
-  margin-bottom: -60px;
-  text-transform: uppercase;
-  color: black;
-  
-}
-
-p{
-  display: flex;
-  justify-content: center;
-  margin-right: 200px;
-  margin-left: 200px;
-  padding-left: 100px;
-  padding-right: 100px;
-
-}
-
-/*.all-button{
-    display: flex; 
-    justify-content: center;
-    font-size: 15px;
-}
-
-a:link{
-    text-decoration: none;
-    }
-    
-#button{
-  display: flex; 
-  justify-content: center;
-  text-transform: uppercase;
-  border: rgb(240, 240, 204) 5px solid;
-  background-color: rgb(240, 240, 204);
-  padding: 10px 10px 10px 10px;
-  color: black;
-}
-</style>
+</html>
